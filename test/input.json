@@ -1,0 +1,16 @@
+[
+  {
+    "keyA": "U+03B1",
+    "keyB": "α",
+    "keyC": "foo",
+    "keyD": "alpha",
+    "keyE": "alpha4"
+  },
+  {
+    "keyA": "U+03B2",
+    "keyB": "β",
+    "keyC": "bar",
+    "keyD": "beta",
+    "keyE": "beta2"
+  }
+]

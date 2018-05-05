@@ -1,0 +1,46 @@
+{
+  "name": "rfc-data-cleaner",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hugolpz/rfc-data-cleaner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hugolpz/rfc-data-cleaner/issues"
+  },
+  "description": "Node shell tool to convert overly rich json into slick and valid json for Ruby-Font-Creator",
+  "keywords": [
+    "font",
+    "languages"
+  ],
+  "main": "script.js",
+  "author": [
+    "Hugo Lopez"
+  ],
+  "license": [
+    "Apache-2.0",
+    "MIT license"
+  ],
+  "man": {
+    "name": "rfc-data-cleaner",
+    "version": "0.0.1",
+    "description": "Node shell tool to convert overly rich json into slick and valid json for Ruby-Font-Creator",
+    "main": "script.js",
+    "man": "./man/doc.1"
+  },
+  "scripts": {
+    "start": "node ./script.js",
+    "test": "ava test"
+  },
+  "dependencies": {
+    "commander": "^2.14.1"
+  },
+  "devDependencies": {
+    "ava": "^0.18.0"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  }
+}
