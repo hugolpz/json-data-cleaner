@@ -1,0 +1,25 @@
+{
+  "name": "balance",
+  "version": "0.0.1",
+  "description": "{DESCRIPTION}",
+  "keywords": [],
+  "license": "BSD-3-Clause",
+  "main": "build/balance.js",
+  "jsnext:main": "index",
+  "homepage": "https://github.com/hugolpz/rfc-balance",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hugolpz/rfc-balance.git"
+  },
+  "scripts": {
+    "pretest": "rm -rf build && mkdir build && rollup -f umd -n d3 -o build/balance.js -- index.js",
+    "test": "tape 'test/**/*-test.js'",
+    "prepublish": "npm run test && uglifyjs build/balance.js -c -m -o build/balance.min.js",
+    "postpublish": "zip -j build/balance.zip -- LICENSE README.md build/balance.js build/balance.min.js"
+  },
+  "devDependencies": {
+    "rollup": "0.27",
+    "tape": "4",
+    "uglify-js": "2"
+  }
+}
